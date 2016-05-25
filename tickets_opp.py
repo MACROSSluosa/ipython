@@ -8,12 +8,18 @@ def doChore():
 	time.sleep(0.5)
 
 #####function for each thread
+<<<<<<< HEAD
 class BoothThread(threading.Thread):
 	def __init__(self,tid,monitor):
+=======
+class BoothThread(threading.Thread)：
+	def __init__(self,tid,monitor)
+>>>>>>> refs/remotes/origin/master
 		self.tid=tid
 		self.monitor=monitor
 		threading.Thread.__init__(self)
 	def run(self):
+<<<<<<< HEAD
 		while True:
 			monitor['lock'].acquire() #lock ; or wait for other thread is holding the lock
 			if monitor['tick']!=0:
@@ -35,6 +41,10 @@ for k in range(10):
 	new_thread.start()
 
 
+=======
+		while True
+		
+>>>>>>> refs/remotes/origin/master
 
 
 
